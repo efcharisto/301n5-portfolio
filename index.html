@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link type="text/css" rel="stylesheet" href="styles/stylesheet.css" />
   <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="styles/stylesheet.css" />
+  <meta name=“viewport” content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="vendor/styles/normalize.css">
+  <!-- included normalize from class 1 pair project -->
+  <link rel="stylesheet" href="styles/icons.css">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/modules.css">
   <title>301 Porpfolio</title>
 </head>
 <body>
   <header>
     <h1>Maks' Portfolio Assignment</h1>
+    <nav class="main-nav">
+      <!--Hamburger menu is there but wouldnt float right and small-->
+      <div class="icon-menu"></div>
+      <ul>
+        <li class="tab" data-content="menu1"><a href="#" class="icon-home"> Menu 1</a></li>
+        <li class="tab" data-content="menu2"><a href="#" class="icon-address-book"> Menu 2</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <article>
+    <article class="template">
     <h3>Some text</h3>
     <div id="summary"></div>
     <p>Here's your lucky number:</p>

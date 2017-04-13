@@ -5,3 +5,10 @@ body {
 .randomNum {
   color: green;
 }
+
+.icon-menu {
+  display: none;
+  float: right;
+  font-size: 4em;
+  /*changes hamburger size*/
+}
