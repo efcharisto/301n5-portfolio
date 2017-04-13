@@ -24,7 +24,7 @@ function Jobs (jobsObject) {
   this.time = jobsObject.time;
   this.purpose = jobsObject.purpose;
 }
-
+//trying to make this work but stuck
 Jobs.prototype.toHtml = function() {
   var $postJobs = $('jobs.template').clone();
   $postJobs.find('div').html(this.name);
