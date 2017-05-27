@@ -24,6 +24,32 @@
     </nav>
   </header>
   <main>
+
+<article class="allJobs"></artile>
+<!-- template from class -->
+<script type="text/template" id="template">
+  <h1>Hello and welcome to {{siteName}}</h1>
+  <h2 data-admin="{{admin}}">The site administrator is {{admin}}</h2>
+  {{{body}}}
+</script>
+<!-- template from class ends -->
+
+<!-- jhjkhkj -->
+  <script id="handlebarsTemplate" type="text/x-handlebars-template">
+  <article class="clearfix" data-author="{{name}}" data-category="{{body}}">
+    <header>
+      <h1>{{title}}</h1>
+      <div class="byline">
+        By <address><a href="{{authorUrl}}">{{body}}</a></address>
+        {{publishStatus}}
+      </div>
+    </header>
+    <section class="article-body">{{{body}}}</section>
+    <a href="#" class="read-on">Read on &rarr;</a>
+  </article>
+</script>
+<!-- kjhjhhjg -->
+
     <article class="template">
     <h3>Some text</h3>
     <div id="summary"></div>
@@ -31,12 +57,16 @@
     <div class="randomNum"></div>
     <p>First paragpraph will go here, along with more material</p>
     </article>
+
   </main>
   <footer>
     2017. 301 Portfolio Assignment
   </footer>
+
 </body>
 
+<script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v4.0.5.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src = "https://code.jquery.com/jquery-3.2.0.js"></script>
 <script type='text/javascript' src='scripts/sourceData.js'></script>
 <script type='text/javascript' src='scripts/app.js'></script>

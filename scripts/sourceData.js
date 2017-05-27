@@ -20,3 +20,6 @@ var jobsObject = [
     purpose: 'Assisting internal users with hardware and software related issues and performing server administration tasks in Microsoft AD environment'
   },
 ];
+
+var data = {param1: 'this is the first parameter', param2: 'another one'};
+console.log(`hello, ${data.param1} and ${data.param2}`);
