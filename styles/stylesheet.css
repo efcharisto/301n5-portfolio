@@ -1,0 +1,14 @@
+body {
+    background-color: #edf6f7;
+}
+
+.randomNum {
+  color: green;
+}
+
+.icon-menu {
+  display: none;
+  float: right;
+  font-size: 4em;
+  /*changes hamburger size*/
+}
