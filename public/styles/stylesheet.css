@@ -6,9 +6,10 @@ body {
   color: green;
 }
 
+/*changes hamburger size*/
 .icon-menu {
   display: none;
   float: right;
   font-size: 4em;
-  /*changes hamburger size*/
+
 }
