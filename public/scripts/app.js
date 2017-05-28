@@ -64,6 +64,6 @@ $(() => {
 
 $(document).ready(function(){
     $('.randomNum').click(function(){
-        $('p').append(`data`);
+        $('p').append(` More luck to you! `);
     });
 });
