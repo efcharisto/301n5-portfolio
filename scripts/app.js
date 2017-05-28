@@ -35,7 +35,7 @@ var finalHtml = handleBarsTemplate(job);
 $('#handlebarsContent').append(finalHtml);
 $('#handlebarsContent').append(handleBarsTemplate(job2));
 $('#handlebarsContent').append(handleBarsTemplate(job3));
-// template from class ends
+
 
 function randomNum(min, max){
   return Math.floor(Math.random() * (max - min)) + min;
