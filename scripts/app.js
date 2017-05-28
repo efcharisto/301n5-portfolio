@@ -36,7 +36,6 @@ $('#handlebarsContent').append(finalHtml);
 $('#handlebarsContent').append(handleBarsTemplate(job2));
 $('#handlebarsContent').append(handleBarsTemplate(job3));
 
-
 function randomNum(min, max){
   return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -48,8 +47,20 @@ function Student(name, course, school, location) {
   this.school = school;
   this.location = location;
 }
-
 var Maks = new Student('Maks', '301 Intermediate Software Development', 'Code Fellow', 'Seattle, WA.');
 
 document.getElementById('summary').innerHTML =
 'My name is ' + Maks.firstName + '. I\'m currently taking ' + Maks.course + ' at ' + Maks.school + ', located in ' + Maks.location;
+
+// ******************
+$(() => {
+  $.ajax({
+    url: '/data/jobs.json'
+  }).done(function(data) {
+    console.log('request done: ' + Date.now());
+    data.forEach((note) => {
+      $('#notes').append(`<li>${note.body}</li>`);
+    });
+  });
+  console.log(Date.now());
+});

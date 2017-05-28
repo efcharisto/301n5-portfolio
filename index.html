@@ -24,16 +24,28 @@
     </nav>
   </header>
   <section id="summary"></section>
-  <p>Here's your lucky number: <a class="randomNum"></a>.</p>
+  <p>Here's your lucky number today: <a class="randomNum"></a>.</p>
 
+  <main id="handlebarsContent">
 
-  <main id="handlebarsContent"></main>
+    <!-- ********************* -->
+    <ul id="notes">
+      <li id="notes"></li>
+    </ul>
+
+    <script type="text/template" id="article-template">
+      <p>{{purpose}}....</p>
+    </script>
+    <!-- ********************* -->
+
+  </main>
 
   <script type="text/template" id="template">
     <p>When I was {{age}}, I worked for {{employer}} as {{name}}.<br>
     It was exciting to be a part of the team for {{time}}.<br>
     {{purpose}}.</p>
 <p></p>
+
   </script>
 
   <footer>
@@ -42,7 +54,8 @@
 
 </body>
 
-<script src="https://code.jquery.com/jquery-3.2.0.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v4.0.5.js"></script>
 <script src="scripts/app.js"></script>
 <script type='text/javascript' src='scripts/sourceData.js'></script>
