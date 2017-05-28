@@ -5,17 +5,17 @@
   <link type="text/css" rel="stylesheet" href="styles/stylesheet.css" />
   <meta name=“viewport” content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="vendor/styles/normalize.css">
-  <!-- included normalize from class 1 pair project -->
   <link rel="stylesheet" href="styles/icons.css">
-<link rel="stylesheet" href="styles/base.css">
-<link rel="stylesheet" href="styles/modules.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/modules.css">
   <title>301 Porpfolio</title>
 </head>
+
 <body>
+
   <header>
     <h1>Maks' Portfolio Assignment</h1>
     <nav class="main-nav">
-      <!--Hamburger menu is there but wouldnt float right and small-->
       <div class="icon-menu"></div>
       <ul>
         <li class="tab" data-content="menu1"><a href="#" class="icon-home"> Menu 1</a></li>
@@ -23,51 +23,29 @@
       </ul>
     </nav>
   </header>
-  <main>
 
-<article class="allJobs"></artile>
-<!-- template from class -->
-<script type="text/template" id="template">
-  <h1>Hello and welcome to {{siteName}}</h1>
-  <h2 data-admin="{{admin}}">The site administrator is {{admin}}</h2>
-  {{{body}}}
-</script>
-<!-- template from class ends -->
+  <p>Here's your lucky number:</p>
+  <div class="randomNum"></div>
 
-<!-- jhjkhkj -->
-  <script id="handlebarsTemplate" type="text/x-handlebars-template">
-  <article class="clearfix" data-author="{{name}}" data-category="{{body}}">
-    <header>
-      <h1>{{title}}</h1>
-      <div class="byline">
-        By <address><a href="{{authorUrl}}">{{body}}</a></address>
-        {{publishStatus}}
-      </div>
-    </header>
-    <section class="article-body">{{{body}}}</section>
-    <a href="#" class="read-on">Read on &rarr;</a>
-  </article>
-</script>
-<!-- kjhjhhjg -->
+  <main id="handlebarsContent"></main>
 
-    <article class="template">
-    <h3>Some text</h3>
-    <div id="summary"></div>
-    <p>Here's your lucky number:</p>
-    <div class="randomNum"></div>
-    <p>First paragpraph will go here, along with more material</p>
-    </article>
+  <script type="text/template" id="template">
+    <p>When I was {{age}}, I worked for {{employer}} as {{name}}.<br>
+    It was exciting to be a part of the team for {{time}}.<br>
+    {{purpose}}.</p>
+<p></p>
+  </script>
 
-  </main>
+
+
   <footer>
     2017. 301 Portfolio Assignment
   </footer>
 
 </body>
 
+<script src="https://code.jquery.com/jquery-3.2.0.js"></script>
 <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v4.0.5.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src = "https://code.jquery.com/jquery-3.2.0.js"></script>
+<script src="scripts/app.js"></script>
 <script type='text/javascript' src='scripts/sourceData.js'></script>
-<script type='text/javascript' src='scripts/app.js'></script>
 </html>
