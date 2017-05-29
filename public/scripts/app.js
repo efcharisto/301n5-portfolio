@@ -14,7 +14,6 @@ var job = {
   time: ' nearly 5 years',
   purpose: 'The purpose of the International Space Station is to provide knowledge that is the foundation on which our journey to Mars is based. The space station advances scientific knowledge in Earth, space, physical and biological sciences for the benefit of people on Earth. The station serves as the world\'s leading laboratory for cutting-edge research and technology development that will enable human and robotic exploration beyond low-Earth orbit, on to asteroids and Mars'
 };
-
 var job2 = {
   name: 'a Drilling Engineer',
   age:'25',
@@ -22,7 +21,6 @@ var job2 = {
   time: 'about 7 years',
   purpose: 'As a primary member of the wells team, I was responsible for planning and programming drilling and workover activities, making sure that safety and reliability are absolute priorities. I was involved in cost estimation and cost control for wells activities. Capability opportunities  included exploration, high pressure high temperature (HPHT), deepwater, multilateral, extended reach and development drilling. As a lead drilling engineer, I also took on supervisory and assurance responsibilities.'
 };
-
 var job3 =  {
   name:  'Smokejumper Forest Fighter',
   age: '37',
@@ -36,7 +34,6 @@ $('#handlebarsContent').append(finalHtml);
 $('#handlebarsContent').append(handleBarsTemplate(job2));
 $('#handlebarsContent').append(handleBarsTemplate(job3));
 
-
 function randomNum(min, max){
   return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -48,8 +45,25 @@ function Student(name, course, school, location) {
   this.school = school;
   this.location = location;
 }
-
 var Maks = new Student('Maks', '301 Intermediate Software Development', 'Code Fellow', 'Seattle, WA.');
 
 document.getElementById('summary').innerHTML =
 'My name is ' + Maks.firstName + '. I\'m currently taking ' + Maks.course + ' at ' + Maks.school + ', located in ' + Maks.location;
+
+// ******************
+$(() => {
+  $.ajax({
+    url: 'data/jobs.json'
+  }).done(function(data) {
+    data.forEach((note) => {
+      $('#notes').append(`<li>${note.body}</li>`);
+    });
+  });
+  console.log('request started: ' + Date.now());
+});
+
+$(document).ready(function(){
+    $('.randomNum').click(function(){
+        $('.randomNum').append(` More luck to you! `);
+    });
+});

@@ -1,6 +1,6 @@
-/* TODO: Add a rule for images, so they never exceed their container's width. */
+
 img {
-  min-width: 100%;
+  max-width: 100%;
 }
 
 body {
