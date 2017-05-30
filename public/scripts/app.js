@@ -34,7 +34,7 @@ var handleBarsTemplate = Handlebars.compile(sourceHtml);
 // $('#handlebarsContent').append(handleBarsTemplate(job2));
 // $('#handlebarsContent').append(handleBarsTemplate(job3));
 
-function randomNum(min, max){
+function randomNum(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 document.querySelector('.randomNum').innerHTML = randomNum(1, 100);
@@ -48,7 +48,7 @@ function Student(name, course, school, location) {
 var Maks = new Student('Maks', '301 Intermediate Software Development', 'Code Fellow', 'Seattle, WA.');
 
 document.getElementById('summary').innerHTML =
-'My name is ' + Maks.firstName + '. I\'m currently taking ' + Maks.course + ' at ' + Maks.school + ', located in ' + Maks.location;
+  'My name is ' + Maks.firstName + '. I\'m currently taking ' + Maks.course + ' at ' + Maks.school + ', located in ' + Maks.location;
 
 // ******************
 $(() => {
@@ -66,8 +66,8 @@ $(() => {
   console.log('request started: ' + Date.now());
 });
 
-$(document).ready(function(){
-    $('.randomNum').click(function(){
-        $('.randomNum').append(` More luck to you! `);
-    });
+$(document).ready(function() {
+  $('.randomNum').click(function() {
+    $('.randomNum').append(` More luck to you! `);
+  });
 });
