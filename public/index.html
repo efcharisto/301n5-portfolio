@@ -31,22 +31,36 @@
   </div>
 </div>
 
+<!-- _______________ -->
+<div class="fixedBack img1">
+  <h1>fixedBack image 1 text placeholder</h1>
+</div>
+
 
   <section id="summary"></section>
   <p>Here's your lucky number today, click it to multiply your luck: <a class="randomNum"></a> </p>
 
+  <div id="notes"></div>
   <main id="handlebarsContent">
-    <!-- ********************* -->
-    <!-- <ul id="notes"></ul> -->
-    <!-- ********************* -->
   </main>
+
+<div class="fixedBack img2">
+<!-- ********* -->
+<div id="vidContainer">
+<div id="snowVid">
+<video video controls loop preload="true" autoplay loop muted poster="" class="video-background">
+  <source src="https://pixabay.com/en/videos/download/video-7418_large.mp4" type="video/mp4" media="(orientation:landscape)">
+</video>
+</div>
+</div>
+
+<!-- ********* -->
 
   <script type="text/template" id="template">
     <p>When I was {{age}}, I worked for {{employer}} as {{name}}.<br>
     It was exciting to be a part of the team for {{time}}.<br>
     {{purpose}}.</p>
 <p></p>
-
   </script>
 
   <footer>
