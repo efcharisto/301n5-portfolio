@@ -24,6 +24,7 @@
     </nav>
   </header>
 
+
   <div id="front-face">
     <div id="seattle">
     <a href="https://www.instagram.com"><img id="pic" src="https://agile-citadel-15000.herokuapp.com/assets/images/about/max.jpg"></a>
@@ -31,22 +32,49 @@
   </div>
 </div>
 
+<div class="fixedBack img2">
+		<div class="fixedBack">
+			<p>
+				<section id="summary"></section>
+			</p>
+		</div>
+	</div>
 
-  <section id="summary"></section>
+<div id="notes"></div>
+
+<!-- _______________ -->
+<div class="fixedBack img1">
+  <h1>fixedBack image 1 text placeholder</h1>
+</div>
+
+<!-- _______________ -->
+
+
+
   <p>Here's your lucky number today, click it to multiply your luck: <a class="randomNum"></a> </p>
 
-  <main id="handlebarsContent">
-    <!-- ********************* -->
-    <!-- <ul id="notes"></ul> -->
-    <!-- ********************* -->
-  </main>
+  <div id="notes"></div>
+  <!-- handlebars work, using Ajax reqeust to json file to pull data - WORKS!!! =) -->
+  <!-- <main id="handlebarsContent">
+  </main> -->
+
+<div class="fixedBack img2">
+<!-- ********* -->
+<div id="vidContainer">
+<div id="snowVid">
+<video video controls loop preload="true" autoplay loop muted poster="" class="video-background">
+  <source src="https://pixabay.com/en/videos/download/video-7418_large.mp4" type="video/mp4" media="(orientation:landscape)">
+</video>
+</div>
+</div>
+
+<!-- ********* -->
 
   <script type="text/template" id="template">
     <p>When I was {{age}}, I worked for {{employer}} as {{name}}.<br>
     It was exciting to be a part of the team for {{time}}.<br>
     {{purpose}}.</p>
 <p></p>
-
   </script>
 
   <footer>
