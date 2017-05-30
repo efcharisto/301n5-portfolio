@@ -39,8 +39,9 @@ p{
 }
 #front-face{
   position: absolute;
-  bottom: 0;
-  padding: 0.1em;
+}
+div#font-face{
+    max-height: 50%;
 }
 
 #pic {
@@ -62,12 +63,13 @@ p{
 }
 
 #seattle{
-  /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/09/Sunset_seattle.jpg");*/
   background-size: cover;
   background-position: center;
-  /*opacity: 0.55;*/
   padding-bottom: 5em;
   text-align: center;
+  max-height: 10em;
+  /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/09/Sunset_seattle.jpg");*/
+  /*opacity: 0.55;*/
   /*border: Solid black 2px;*/
 }
 
@@ -79,7 +81,7 @@ p{
 }
 
 .fixedBack {
-	min-height: 50%;
+	min-height: 70%;
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
