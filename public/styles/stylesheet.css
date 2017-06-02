@@ -1,7 +1,6 @@
 body {
     /*http://wallpapercave.com/wp/14b4QVV.jpg*/
-    /*background-image: url("http://tinyurl.com/backpicfr");*/
-
+    /*background-image: url("http://tinyurl.com/backpicfr");*/ 
     background-color: #f2f6f7;
     background-repeat: round;
     background-attachment: fixed;
@@ -15,16 +14,16 @@ body, html, main {
 .randomNum {
     color: green;
 }
-/*changes hamburger size*/
 
+/*changes hamburger size*/
 .icon-menu {
     display: none;
     float: right;
-    font-size: 3em;
+    font-size: 2.5em;
 }
-p {
+/*p {
     background-color: white;
-}
+}*/
 #handlebarsContent {
     background-color: white;
 }

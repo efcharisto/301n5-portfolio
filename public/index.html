@@ -41,20 +41,22 @@
     </div>
   </div>
 
-  <div id="notes"></div>
+  <div id="notes">
+    When I was <div id="age"></div>, I worked for <div id="employer"></div> as <div id="name"></div>.<br> It was exciting to be a part of the team for <div id="time"></div>.<br> <div id="purpose"></div>.
+  </div>
 
   <!-- _______________ -->
   <div class="fixedBack img1">
     <h1>fixedBack image 1 text placeholder</h1>
   </div>
-
   <!-- _______________ -->
-
 
 
   <p>Here's your lucky number today, click it to multiply your luck: <a class="randomNum"></a> </p>
 
-  <div id="notes"></div>
+  <!-- <div id="notes">
+    When I was {{age}}, I worked for {{employer}} as {{name}}.<br> It was exciting to be a part of the team for {{time}}.<br> {{purpose}}.
+  </div> -->
   <!-- handlebars work, using Ajax reqeust to json file to pull data - WORKS!!! =) -->
   <!-- <main id="handlebarsContent">
   </main> -->
@@ -70,7 +72,6 @@
     </div>
 
     <!-- ********* -->
-
     <script type="text/template" id="template">
       <p>When I was {{age}}, I worked for {{employer}} as {{name}}.<br> It was exciting to be a part of the team for {{time}}.<br> {{purpose}}.
       </p>

@@ -51,17 +51,19 @@ document.getElementById('summary').innerHTML =
   'My name is ' + Maks.firstName + '. I\'m currently taking ' + Maks.course + ' at ' + Maks.school + ', located in ' + Maks.location;
 
 // ******************
-$(() => {
+$(function () {
   $.ajax({
     url: 'data/jobs.json'
-  }).done(function(data) {
-    data.forEach((note) => {
-      $('#notes').append(`<div>${note.name}</div>`);
-      $('#notes').append(`<div>${note.age}</div>`);
-      $('#notes').append(`<div>${note.employer}</div>`);
-      $('#notes').append(`<div>${note.time}</div>`);
-      $('#notes').append(`<div>${note.purpose}</div>`);
-    });
+  }).done(function (data) {
+    data.indexOf(1);{
+      (function (note) {
+        $('#name').append('<div>' + note.name + '</div>');
+        $('#age').append('<div>' + note.age + '</div>');
+        $('#employer').append('<div>' + note.employer + '</div>');
+        $('#time').append('<div>' + note.time + '</div>');
+        $('#purpose').append('<div>' + note.purpose + '</div>');
+      });
+    }
   });
   console.log('request started: ' + Date.now());
 });
